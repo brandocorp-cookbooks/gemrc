@@ -40,11 +40,11 @@ This resource supports the following actions:
     <th>Description</th>
   </tr>
   <tr>
-    <td>:create</td>
+    <td><code>:create</code></td>
     <td>Default. Use to create a gemrc file. If the file already exists (but does not match), use to update that file to match.</td>
   </tr>
   <tr>
-    <td>:delete</td>
+    <td><code>:delete</code></td>
     <td>Use to delete a gemrc file</td>
   </tr>
 </table>
@@ -68,7 +68,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>sources</td>
-    <td>An <tt>Array</tt> of remote gem repositories</td>
+    <td>An <code>Array</code> of remote gem repositories</td>
   </tr>
   <tr>
     <td>verbose</td>
@@ -84,7 +84,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>gempath</td>
-    <td>An <tt>Array</tt> of paths in which to look for gems</td>
+    <td>An <code>Array</code> of paths in which to look for gems</td>
   </tr>
   <tr>
     <td>disable_default_gem_server</td>
@@ -92,7 +92,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>command_options</td>
-    <td>An optional <tt>Hash</tt> containing <tt>String</tt> keys, each representing a gem command, with <tt>String</tt> values containing arguments for the specified gem command</td>
+    <td>An optional <code>Hash</code> containing <code>String</code> keys, each representing a gem command, with <code>String</code> values containing arguments for the specified gem command</td>
   </tr>
 </table>
 
@@ -123,11 +123,11 @@ This resource supports the following actions:
     <th>Description</th>
   </tr>
   <tr>
-    <td>:create</td>
+    <td><code>:create</code></td>
     <td>Default. Use to create the system's gemrc file. If the file already exists (but does not match), use to update the file to match.</td>
   </tr>
   <tr>
-    <td>:delete</td>
+    <td><code>:delete</code></td>
     <td>Use to delete the system's gemrc file</td>
   </tr>
 </table>
@@ -151,7 +151,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>sources</td>
-    <td>An <tt>Array</tt> of remote gem repositories</td>
+    <td>An <code>Array</code> of remote gem repositories</td>
   </tr>
   <tr>
     <td>verbose</td>
@@ -167,7 +167,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>gempath</td>
-    <td>An <tt>Array</tt> of paths in which to look for gems</td>
+    <td>An <code>Array</code> of paths in which to look for gems</td>
   </tr>
   <tr>
     <td>disable_default_gem_server</td>
@@ -175,7 +175,7 @@ This resource has the following attributes:
   </tr>
   <tr>
     <td>command_options</td>
-    <td>An optional <tt>Hash</tt> containing <tt>String</tt> keys, each representing a gem command, with <tt>String</tt> values containing arguments for the specified gem command</td>
+    <td>An optional <code>Hash</code> containing <code>String</code> keys, each representing a gem command, with <code>String</code> values containing arguments for the specified gem command</td>
   </tr>
 </table>
 
