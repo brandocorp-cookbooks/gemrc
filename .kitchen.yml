@@ -1,0 +1,25 @@
+---
+driver:
+  name: docker
+  require_chef_omnibus: false
+  provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
+
+provisioner:
+  name: chef_zero
+  data_bags_path: test/fixtures/data_bags
+
+platforms:
+  - name: centos-6.5
+  - name: ubuntu-12.04
+  - name: debian-7.8
+
+suites:
+  - name: sources
+    run_list:
+      - recipe[gemrc_test::sources]
+  - name: command_options
+    run_list:
+      - recipe[gemrc_test::command_options]
+  - name: system
+    run_list:
+      - recipe[gemrc_test::system]

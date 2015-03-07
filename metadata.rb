@@ -1,0 +1,7 @@
+name 'gemrc'
+maintainer 'Brandon Raabe'
+maintainer_email 'brandocorp@gmail.com'
+license 'Apache 2.0'
+description 'Provides a set of LWRPs for managing gemrc files'
+long_description 'Provides a set of LWRPs for managing gemrc files'
+version '0.1.1'

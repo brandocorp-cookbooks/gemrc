@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - ruby/**/*
+    - test/**/*
+    - files/**/*
+SingleSpaceBeforeFirstArg:
+  Exclude:
+    - '**/metadata.rb'
+CyclomaticComplexity:
+  Max: 10
+Encoding:
+  Enabled: false
+LineLength:
+  Enabled: false
+Documentation:
+  Enabled: false

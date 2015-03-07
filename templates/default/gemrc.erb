@@ -1,0 +1,32 @@
+<%- if @config.sources %>
+:sources:
+  <%- @config.sources.each do |src| %>
+  - <%= src %>
+  <%- end %>
+<%- end %>
+<%- if @config.gempath %>
+:gempath:
+  <%- @config.gempath.each do |path| %>
+  - <%= path %>
+  <%- end %>
+<%- end %>
+<%- unless @config.verbose.nil? %>
+:verbose: <%= @config.verbose %>
+<%- end %>
+<%- unless @config.update_sources.nil? %>
+:update_sources: <%= @config.update_sources %>
+<%- end %>
+<%- unless @config.backtrace.nil? %>
+:backtrace: <%= @config.backtrace %>
+<%- end %>
+<%- unless @config.disable_default_gem_server.nil? %>
+:disable_default_gem_server: <%= @config.disable_default_gem_server %>
+<%- end %>
+<%- %w( build cert check cleanup contents dependency environment fetch
+  generate_index help install list lock mirror open outdated owner pristine
+  push query rdoc search server source specification stale uninstall unpack
+  update which yank ).each do |cmd| %>
+  <%- if @config.command_options[cmd] %>
+<%= cmd %>: <%= @config.command_options[cmd] %>
+  <%- end %>
+<%- end %>
