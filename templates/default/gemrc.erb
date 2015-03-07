@@ -26,7 +26,7 @@
   generate_index help install list lock mirror open outdated owner pristine
   push query rdoc search server source specification stale uninstall unpack
   update which yank ).each do |cmd| %>
-  <%- if @config.command_options[cmd] %>
+  <%- if @config.command_options && @config.command_options[cmd] %>
 <%= cmd %>: <%= @config.command_options[cmd] %>
   <%- end %>
 <%- end %>

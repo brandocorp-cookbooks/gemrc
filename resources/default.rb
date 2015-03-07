@@ -35,17 +35,17 @@ attribute :sources,
           default: nil
 
 attribute :verbose,
-          kind_of: String,
+          kind_of: [String, TrueClass, FalseClass],
           regex: /true|false|:really/,
           default: nil
 
 attribute :update_sources,
-          kind_of: String,
+          kind_of: [String, TrueClass, FalseClass],
           regex: /true|false/,
           default: nil
 
 attribute :backtrace,
-          kind_of: String,
+          kind_of: [String, TrueClass, FalseClass],
           regex: /true|false/,
           default: nil
 
@@ -54,7 +54,7 @@ attribute :gempath,
           default: nil
 
 attribute :disable_default_gem_server,
-          kind_of: String,
+          kind_of: [String, TrueClass, FalseClass],
           regex: /true|false/,
           default: nil
 

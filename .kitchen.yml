@@ -14,12 +14,12 @@ platforms:
   - name: debian-7.8
 
 suites:
-  - name: sources
+  - name: user
     run_list:
-      - recipe[gemrc_test::sources]
-  - name: command_options
-    run_list:
-      - recipe[gemrc_test::command_options]
+      - recipe[gemrc_test::user]
   - name: system
     run_list:
       - recipe[gemrc_test::system]
+  - name: command_options
+    run_list:
+      - recipe[gemrc_test::command_options]

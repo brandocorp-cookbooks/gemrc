@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: gemrc
-# Provider:: gemrc
+# Provider:: system_gemrc
 #
 # Copyright (C) 2015 Brandon Raabe
 #
